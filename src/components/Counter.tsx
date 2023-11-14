@@ -18,7 +18,6 @@ export const Counter: React.FC<ICounter> = ({ seconds }) => {
     return () => { if (interval !== undefined) clearInterval(interval)};
   }, [isRunning, seconds]);
 
-
   return (
     <>
       <p>{counter}</p>
